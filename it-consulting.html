@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Consulting Services — Velanta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ── Navigation ── -->
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+        <img src="logo-nav.svg" alt="Velanta" class="logo-default">
+        <img src="logo-nav.svg" alt="Velanta" class="logo-scrolled">
+      </a>
+    <nav class="nav-links">
+      <a href="boutique.html" class="nav-link">Boutique Solutions</a>
+      <a href="it-consulting.html" class="nav-link nav-link--active">IT Consulting</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="document.querySelector('.nav-mobile').classList.toggle('open'); document.querySelector('.nav').classList.toggle('menu-open')">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="contact.html" class="btn btn-primary nav-cta nav-cta-desktop">Get in Touch</a>
+  </div>
+  <div class="nav-mobile">
+    <a href="boutique.html" class="nav-link">Boutique Solutions</a>
+    <a href="it-consulting.html" class="nav-link nav-link--active">IT Consulting</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── Hero ── -->
+  <section class="hero hero--inner">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80');"></div>
+    <div class="container text-center">
+      <h1>Technology Strategy. Engineered for What's Next.</h1>
+      <p class="body-lg" style="color: rgba(255,255,255,0.85);">Velanta delivers IT consulting services that align your technology needs with your business objectives — with the rigor and discretion of a trusted advisor.</p>
+    </div>
+  </section>
+
+  <!-- ── What We Offer ── -->
+  <section class="section section--light">
+    <div class="container text-center">
+      <h2>Strategic Technology Solutions</h2>
+      <p class="section-subtitle">Velanta provides consulting services that reduce long-term overhead costs while maintaining the efficiency — from cybersecurity to fully managed offshore teams.</p>
+      <div class="services-grid--5">
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4l-4 8h8l-4 8"/><rect x="14" y="20" width="20" height="24" rx="2"/><path d="M20 28h8"/><path d="M20 34h8"/><path d="M24 20v-4"/></svg>
+          <h3>Cybersecurity Solutions</h3>
+          <p>From vulnerability assessments to security architecture design, we build defense frameworks that protect your data, your clients, and your reputation — without the overhead of an in-house team.</p>
+        </div>
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><ellipse cx="24" cy="24" rx="8" ry="18"/><path d="M6 24h36"/><path d="M8 14h32"/><path d="M8 34h32"/></svg>
+          <h3>Offshore IT Outsourcing</h3>
+          <p>We establish and manage dedicated offshore development and support teams tailored to your technology needs — delivering enterprise-grade output at a fraction of onshore costs.</p>
+        </div>
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32l-8 8"/><path d="M32 32l8 8"/><ellipse cx="24" cy="20" rx="16" ry="12"/><path d="M18 20l4 4 8-8"/></svg>
+          <h3>Cloud &amp; Infrastructure</h3>
+          <p>Whether you're migrating to the cloud, optimizing hybrid environments, or consolidating your stack, we guide you through the process with minimal disruption and maximum savings.</p>
+        </div>
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h36v28H6z"/><path d="M14 18h20"/><path d="M14 24h12"/><path d="M14 30h16"/><path d="M6 10l18 14L42 10"/></svg>
+          <h3>IT Cost Optimization</h3>
+          <p>We audit your current technology spend, identify inefficiencies, and restructure your IT operations to deliver the same — or better — results at significantly lower cost.</p>
+        </div>
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="32" height="36" rx="2"/><path d="M16 16h16"/><path d="M16 24h16"/><path d="M16 32h10"/><path d="M30 30l4 4 6-8"/></svg>
+          <h3>IT Governance &amp; Compliance</h3>
+          <p>Navigating regulatory and security requirements across industries and jurisdictions. We ensure your technology operations meet the standards your stakeholders expect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Our Approach ── -->
+  <section class="section section--spacious reveal">
+    <div class="container text-center">
+      <span class="overline">Our Approach</span>
+      <h2>How We Work With You</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Assessment</h3>
+            <p>We audit your current technology landscape and spend, identifying inefficiencies, security gaps, and outsourcing opportunities.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Strategy</h3>
+            <p>We design a tailored plan — whether it's a cybersecurity framework, an offshore team structure, or a full cost-optimization roadmap.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Implementation</h3>
+            <p>Our team executes with precision — establishing offshore operations, deploying security solutions, and managing the transition seamlessly.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Ongoing Management</h3>
+            <p>We continue to manage, optimize, and scale your IT operations — ensuring costs stay low and quality stays high.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section reveal">
+    <div class="container">
+      <h2>Let's Build Your Technology Advantage.</h2>
+      <p>A strategic conversation about your technology future starts with a single step.</p>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo"><img src="logo-flat-gold.png" alt="Velanta" style="height: 44px;"></div>
+        <p class="footer-tagline">Where Ambition Meets Expertise.</p>
+      </div>
+      <div class="footer-links">
+        <a href="boutique.html">Boutique Solutions</a>
+        <a href="it-consulting.html">IT Consulting</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:office@velanta.sg">office@velanta.sg</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 Velanta. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
+});
+document.addEventListener('click', function(e) {
+  var mobile = document.querySelector('.nav-mobile');
+  var hamburger = document.querySelector('.nav-hamburger');
+  if (!mobile.contains(e.target) && !hamburger.contains(e.target)) {
+    mobile.classList.remove('open');
+    document.querySelector('.nav').classList.remove('menu-open');
+  }
+});
+
+// Scroll reveal
+(function() {
+  var els = document.querySelectorAll('.reveal, .reveal-stagger');
+  if (!els.length) return;
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>

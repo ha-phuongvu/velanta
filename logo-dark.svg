@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3282.4 1203.74">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Clother-Regular, Clother;
+        font-size: 473.14px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        letter-spacing: .09em;
+      }
+
+      .cls-4 {
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <g id="artboard_8" data-name="artboard 8">
+    <g id="black-logo">
+      <rect id="background" class="cls-2" width="3282.4" height="1203.74"/>
+      <g id="logo">
+        <g id="favicon">
+          <path d="M621.31,986.1h0c44.94,0,86.31-24.51,107.89-63.93l286-522.37c44.88-81.97-14.44-182.07-107.89-182.07h0c-44.94,0-86.31,24.51-107.89,63.93l-286,522.37c-44.88,81.97,14.44,182.07,107.89,182.07Z"/>
+          <path d="M340.87,463.65h-.09c-44.93,0-86.28-24.5-107.85-63.91h0c-44.86-81.94,14.43-182.01,107.85-182.01h.09c44.93,0,86.28,24.5,107.85,63.91h0c44.86,81.94-14.43,182.01-107.85,182.01Z"/>
+        </g>
+        <text class="cls-1" transform="translate(1168.95 730.72)"><tspan class="cls-3" x="0" y="0">v</tspan><tspan class="cls-4" x="272.53" y="0">elanta</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

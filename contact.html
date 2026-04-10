@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Velanta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ── Navigation ── -->
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+        <img src="logo-nav.svg" alt="Velanta" class="logo-default">
+        <img src="logo-nav.svg" alt="Velanta" class="logo-scrolled">
+      </a>
+    <nav class="nav-links">
+      <a href="boutique.html" class="nav-link">Boutique Solutions</a>
+      <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+      <a href="contact.html" class="nav-link nav-link--active">Contact</a>
+    </nav>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="document.querySelector('.nav-mobile').classList.toggle('open'); document.querySelector('.nav').classList.toggle('menu-open')">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="contact.html" class="btn btn-primary nav-cta nav-cta-desktop">Get in Touch</a>
+  </div>
+  <div class="nav-mobile">
+    <a href="boutique.html" class="nav-link">Boutique Solutions</a>
+    <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+    <a href="contact.html" class="nav-link nav-link--active">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── Hero ── -->
+  <section class="hero hero--inner">
+    <div class="hero-bg" style="background-image: url('contact-hero-bg.jpg'); opacity: 0.6;"></div>
+    <div class="container text-center">
+      <h1>Let's Talk.</h1>
+      <p class="body-lg" style="color: rgba(255,255,255,0.85);">Every engagement begins with a confidential conversation. Reach out, and a senior member of our team will respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- ── Contact Form ── -->
+  <section class="section reveal">
+    <div class="container">
+      <form class="form-card" onsubmit="return false;">
+        <div class="form-group">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" id="name" class="form-input" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-input" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone Number <span>(Optional)</span></label>
+          <input type="tel" id="phone" class="form-input" placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="form-group">
+          <label for="interest" class="form-label">Area of Interest</label>
+          <select id="interest" class="form-select">
+            <option value="" disabled selected>Select an option</option>
+            <option value="boutique">Boutique Solutions</option>
+            <option value="it">IT Consulting</option>
+            <option value="both">Both</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Brief Message</label>
+          <textarea id="message" class="form-textarea" rows="4" placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Your Inquiry</button>
+      </form>
+
+      <!-- ── Additional Info ── -->
+      <div style="max-width: 600px; margin: 48px auto 0; background: var(--navy-05); padding: 32px 40px; border-radius: var(--radius-md);">
+        <h3>Prefer a Direct Conversation?</h3>
+        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; margin-top: 12px;">Email: <a href="mailto:office@velanta.sg" style="color: var(--gold); font-weight: 500;">office@velanta.sg</a></p>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo"><img src="logo-flat-gold.png" alt="Velanta" style="height: 44px;"></div>
+        <p class="footer-tagline">Where Wealth Meets Intelligence.</p>
+      </div>
+      <div class="footer-links">
+        <a href="boutique.html">Boutique Solutions</a>
+        <a href="it-consulting.html">IT Consulting</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:office@velanta.sg">office@velanta.sg</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 Velanta. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
+});
+document.addEventListener('click', function(e) {
+  var mobile = document.querySelector('.nav-mobile');
+  var hamburger = document.querySelector('.nav-hamburger');
+  if (!mobile.contains(e.target) && !hamburger.contains(e.target)) {
+    mobile.classList.remove('open');
+    document.querySelector('.nav').classList.remove('menu-open');
+  }
+});
+
+// Scroll reveal
+(function() {
+  var els = document.querySelectorAll('.reveal, .reveal-stagger');
+  if (!els.length) return;
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>

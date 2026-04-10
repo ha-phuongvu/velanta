@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Solutions — Velanta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ── Navigation ── -->
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+        <img src="logo-nav.svg" alt="Velanta" class="logo-default">
+        <img src="logo-nav.svg" alt="Velanta" class="logo-scrolled">
+      </a>
+    <nav class="nav-links">
+      <a href="boutique.html" class="nav-link nav-link--active">Boutique Solutions</a>
+      <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="document.querySelector('.nav-mobile').classList.toggle('open'); document.querySelector('.nav').classList.toggle('menu-open')">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="contact.html" class="btn btn-primary nav-cta nav-cta-desktop">Get in Touch</a>
+  </div>
+  <div class="nav-mobile">
+    <a href="boutique.html" class="nav-link nav-link--active">Boutique Solutions</a>
+    <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── Hero ── -->
+  <section class="hero hero--inner">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80');"></div>
+    <div class="container text-center">
+      <h1>One Life. Any Country.</h1>
+      <p class="body-lg" style="color: rgba(255,255,255,0.85);">Velanta provides tailored immigration and relocation solutions for high-net-worth individuals and families — protecting your wealth while building your future in a new home.</p>
+    </div>
+  </section>
+
+  <!-- ── What We Offer ── -->
+  <section class="section section--light">
+    <div class="container text-center">
+      <h2>Bespoke Advisory on European Residency</h2>
+      <p class="section-subtitle">Relocating across borders requires coordination across immigration law, government programs, family logistics, and lifestyle planning. Velanta brings clarity to complexity, ensuring every step aligns with your vision for the future.</p>
+      <div class="services-grid--4">
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><ellipse cx="24" cy="24" rx="8" ry="18"/><path d="M6 24h36"/><path d="M8 14h32"/><path d="M8 34h32"/></svg>
+          <h3>Bespoke Advisory on European Residency Program</h3>
+          <p>We evaluate your eligibility and investment requirements and deliver a customized recommendation tailored to your goals, timeline, and family situation within the full landscape of European residency programs.</p>
+        </div>
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20a6 6 0 1 1 12 0"/><circle cx="24" cy="14" r="6"/><path d="M10 38c0-7 6-12 14-12s14 5 14 12"/><path d="M36 16a4 4 0 1 1 0-8"/><path d="M38 18c4 0 8 3 8 8"/><path d="M12 16a4 4 0 1 0 0-8"/><path d="M10 18c-4 0-8 3-8 8"/></svg>
+          <h3>Family Relocation Planning</h3>
+          <p>Moving a family across borders involves more than visas. We coordinate schooling, healthcare, housing, and spousal employment considerations to ensure a smooth transition for everyone.</p>
+        </div>
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h24v36H12z"/><path d="M18 14h12"/><path d="M18 22h12"/><path d="M18 30h8"/><path d="M8 42h32"/><path d="M20 6V2h8v4"/></svg>
+          <h3>Immigration Compliance &amp; Documentation</h3>
+          <p>We manage the complex paperwork, legal requirements, and regulatory filings across jurisdictions — ensuring your application is thorough, timely, and positioned for success.</p>
+        </div>
+        <div class="card card--accent">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 40l10-10"/><path d="M34 8l10-4-4 10"/><path d="M40 4L24 20"/><path d="M14 30l10-10"/><circle cx="10" cy="34" r="4"/><path d="M20 20l-2 6 6-2"/></svg>
+          <h3>Destination Advisory &amp; Settlement</h3>
+          <p>From selecting the right country and city to establishing banking, property, and local networks — we ensure you feel at home from the moment you arrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Our Approach ── -->
+  <section class="section section--spacious reveal">
+    <div class="container text-center">
+      <span class="overline">Our Approach</span>
+      <h2>A Partnership Built on Trust</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Discovery</h3>
+            <p>We begin with a confidential conversation to understand your goals — where you want to go, why, and what matters most to your family.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Pathway Design</h3>
+            <p>We map out the optimal immigration and relocation strategy — identifying the right visa programs, timelines, and requirements for your situation.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Execution</h3>
+            <p>Our team manages every detail — applications, documentation, legal coordination, and settlement logistics — with precision and care.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Ongoing Partnership</h3>
+            <p>From residency renewals to citizenship milestones, we remain your trusted partner through every stage of your new chapter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section reveal">
+    <div class="container">
+      <h2>A Private Conversation Starts Here.</h2>
+      <p>Let us understand your goals so we can help you navigate the path to your new home.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo"><img src="logo-flat-gold.png" alt="Velanta" style="height: 44px;"></div>
+        <p class="footer-tagline">Where Ambition Meets Expertise.</p>
+      </div>
+      <div class="footer-links">
+        <a href="boutique.html">Boutique Solutions</a>
+        <a href="it-consulting.html">IT Consulting</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:office@velanta.sg">office@velanta.sg</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 Velanta. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
+});
+document.addEventListener('click', function(e) {
+  var mobile = document.querySelector('.nav-mobile');
+  var hamburger = document.querySelector('.nav-hamburger');
+  if (!mobile.contains(e.target) && !hamburger.contains(e.target)) {
+    mobile.classList.remove('open');
+    document.querySelector('.nav').classList.remove('menu-open');
+  }
+});
+
+// Scroll reveal
+(function() {
+  var els = document.querySelectorAll('.reveal, .reveal-stagger');
+  if (!els.length) return;
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
