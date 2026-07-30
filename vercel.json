@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/boutique.html",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ]
+}
